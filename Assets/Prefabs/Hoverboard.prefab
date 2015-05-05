@@ -61,7 +61,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100168}
-  m_LocalRotation: {x: 0, y: .718539834, z: 0, w: .69548583}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
   m_LocalPosition: {x: 134.699997, y: 1, z: 250.199997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -103,6 +103,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
+  - {fileID: 2100000, guid: 1ce348f85cd254e93a66ab980b71fc92, type: 2}
   - {fileID: 2100000, guid: 60646220be269435d9b393d74674858d, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
@@ -164,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hoverHeight: 1.70000005
   _castOffsetDist: 3
-  _flipForce: 40
+  _flipForce: 150
   _groundLayer:
     serializedVersion: 2
     m_Bits: 1
@@ -172,16 +173,16 @@ MonoBehaviour:
   _moveSpeed: 25
   _turnSpeed: 25
   _rollSpeed: 4
-  _pitchSpeed: 15
+  _pitchSpeed: 20
   _minPitchTime: .699999988
   _maxSpeed: 25
-  _minLandingTime: .600000024
+  _minLandingTime: 1
   _smokeEmitter: {fileID: 19814600}
   _smokeEmissionMod: 2
-  _sparkEmitter: {fileID: 0}
+  _sparkEmitter: {fileID: 19887574}
   _sparkEmitNum: 35
   _minSparkTime: .699999988
-  _musicSource: {fileID: 0}
+  _musicSource: {fileID: 8228110, guid: 19acc7305b0e24bef8e0e216fb7b57c5, type: 2}
 --- !u!114 &11426236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1280,9 +1281,9 @@ ParticleSystem:
   startDelay: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   moveWithTransform: 0
   InitialModule:
     enabled: 1
@@ -2381,7 +2382,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 1
-  m_Mesh: {fileID: 4300028, guid: 27cd3ffabf618924f9c9eeefb09b60e0, type: 3}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
