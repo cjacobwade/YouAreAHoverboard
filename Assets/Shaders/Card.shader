@@ -1,3 +1,6 @@
+// Upgrade NOTE: commented out 'float4 unity_DynamicLightmapST', a built-in variable
+// Upgrade NOTE: commented out 'float4 unity_LightmapST', a built-in variable
+
 // Shader created with Shader Forge v1.04 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
@@ -26,9 +29,9 @@ Shader "Shader Forge/Card" {
             #pragma multi_compile_fog
             #pragma exclude_renderers xbox360 ps3 flash d3d11_9x 
             #pragma target 3.0
-            float4 unity_LightmapST;
+            // float4 unity_LightmapST;
             #ifdef DYNAMICLIGHTMAP_ON
-                float4 unity_DynamicLightmapST;
+                // float4 unity_DynamicLightmapST;
             #endif
             struct VertexInput {
                 float4 vertex : POSITION;
